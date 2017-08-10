@@ -3,8 +3,13 @@
     <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
 <style>
 @font-face{
-	font-family: LuloClean; src: url('LuloCleanOneBold.otf');
-	}
+	font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
+}
+
+@font-face{
+  font-family: LuloClean; src: url('LuloCleanOneBold.otf');
+  font-weight: bold;
+  }
 
 .parent {
   position: relative;
@@ -13,6 +18,7 @@
   background-attachment:fixed;
   background-repeat:no-repeat;
   background-size:cover;
+  background-position: center;
 }
 .image1 {
   background-position: 0% 0%;
@@ -28,34 +34,66 @@
   height:100%;
   padding:0px;
 }
-  
+
 .centered {
-    width: 90px;
-    border: 1px solid black;
-    padding-top: 25px;
-    padding-right: 42px;
-    padding-bottom: 25px;
+    width: 100px;
+    border: 0.7px solid black;
+    padding-top: 20px;
+    padding-right: 78px;
+    padding-bottom: 20px;
     padding-left: 25px;
     font-size: 40px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: LuloClean;
-	
+
 }
 
 .slogan {
 	font-size: 30px;
     text-align: center;
-	position: fixed;
+	position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -65%);
     font-family: 'Dawning of a New Day', cursive;
-    
+
     }
+
+.btn{
+  border:none;
+  font-family: LuloClean;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size: 13px;
+  margin: 18px;
+  color: #000;
+  position: relative;
+  /*transform: translate(-50%, -140%);*/
+  /*position: absolute;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+}
+
+.green{
+  border-radius: 2px;
+}
+
+.green:hover{
+  background-color: #c0b283;
+  padding: 8px 25px;
+}
 
   </style>
   </head>
@@ -65,10 +103,20 @@
   <img class="image1" src="https://github.com/anya26/area/blob/gh-pages/background3.jpg?raw=true" />
   <img class="image2" src="https://github.com/anya26/area/blob/gh-pages/background4.png?raw=true" />
 </div>
-  
+
  <div class="centered">AREA</div>
-    
+
 <div class="slogan"> changing the world one story at a time </div>
+
+<div id = "buttons">
+  <div style="position:relative">
+    <p style="position:absolute; bottom: 620; width: 100%; text-align: center">
+      <a href="#" class="btn green"> HOME</a>
+      <a href="#" class="btn green"> ABOUT</a>
+      <a href="#" class="btn green"> FLAGGER</a>
+      <a href="#" class="btn green">FORUM </a>
+      <a href="#" class="btn green"> CONTACT</a>
+    </div>
   </body>
 
 </html>
