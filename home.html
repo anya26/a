@@ -1,9 +1,12 @@
 <html>
  <head>
     <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 <style>
+
 @font-face{
 font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
+font-weight: normal;
 }
 
 @font-face{
@@ -27,14 +30,13 @@ font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
   height:140%;
   padding:0px;
 }
-	
+
 .image2 {
   background-position: 0% 100%;
   width:100%;
   height:100%;
   padding:0px;
 }
-
 .centered {
     width: 100px;
     border: 0.7px solid black;
@@ -48,9 +50,8 @@ font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: LuloClean;
+  font-weight: normal;
 }
-
 .slogan {
 	font-size: 30px;
     text-align: center;
@@ -59,14 +60,12 @@ font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
     left: 50%;
     transform: translate(-50%, -60%);
     font-family: 'Dawning of a New Day', cursive;
-
     }
 
 .btn{
   border:none;
-  font-family: LuloClean;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 15px 10px;
   font-size: 13px;
   margin: 18px;
   color: #000;
@@ -77,10 +76,9 @@ font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
   margin: 10px 30px;
   cursor: pointer;
 }
-
 .btn:active {
   transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
+   -webkit-transform: translate(0px, 5px);
 }
 
 .green{
@@ -90,6 +88,42 @@ font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
 .green:hover{
   background-color: #c0b283;
   padding: 8px 25px;
+}
+
+.about{
+
+  font-size: 50px;
+  line-height:300%;
+  font-weight: bold;
+  color: #111f40;
+  position:absolute;
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%, -165%);
+  text-align: center;
+}
+
+.info{
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-style: italic;
+  font-size: 20px;
+  white-space: nowrap;
+  position:absolute;
+  top: 168%;
+  left:50%;
+  transform:translate(-50%, -168%);
+  text-align:center;
+  width: 1000px;
+  border: 1px solid #111f40;
+  background-color: #111f40;
+  padding: 10px 5px 15px 5px;
+  margin: 10px;
+}
+
+
+body{
+  font-family: LuloClean;
 }
 
   </style>
@@ -107,13 +141,19 @@ font-family: LuloClean; src: url('LuloCleanOutlineBold.otf');
 
 <div id = "buttons">
   <div style="position:relative">
-    <p style="position:absolute; bottom: 760; width: 100%; text-align: center">
+    <p style="position:absolute; bottom: 750; width: 100%; text-align: center">
       <a href="#" class="btn green"> HOME</a>
       <a href="#" class="btn green"> ABOUT</a>
       <a href="#" class="btn green"> FLAGGER</a>
       <a href="#" class="btn green">FORUM </a>
       <a href="#" class="btn green"> CONTACT</a>
     </div>
+
+  <h1 class="about">about</h1>
+  <h2 class="about" style="font-family:'Dawning of a New Day', cursive; font-size:40px;">our mission</h2>
+  <p class="info"> <b>sexual assualt =</b> "any type of sexual contact or behavior that occurs without the explicit consent of the recipient"</p>
+
+
   </body>
 
 </html>
